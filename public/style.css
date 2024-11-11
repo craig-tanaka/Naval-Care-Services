@@ -94,26 +94,30 @@ nav{
         width: 40px;
         height: 20px;
         border-radius: 10px;
-}
-.color-mode-slider-cont.light {
-        background: var(--primary-color-dark);
+        transition: transform 0.5s ease, background-color 0.5s ease;
+        cursor: pointer;
 }
 .color-mode-slider-cont.dark {
-        background: var(--primary-color-light);
+        background-color: var(--primary-color-dark);
+}
+.color-mode-slider-cont.light {
+        background-color: var(--primary-color-light);
 }
 
 .color-mode-slider-btn{
-        cursor: pointer;
+        cursor: initial;
         display: block;
         width: 20px;
         height: 20px;
         border-radius: 50%;
-}
-.color-mode-slider-cont.light .color-mode-slider-btn{
-        background-color: var(--primary-color-light);
+        transition: transform 0.5s ease;
 }
 .color-mode-slider-cont.dark .color-mode-slider-btn{
+        background-color: var(--primary-color-light);
+}
+.color-mode-slider-cont.light .color-mode-slider-btn{
         background-color: var(--primary-color-dark);
+        transform: translateX(20px);
 }
 /* Color Mode Switcher */
 

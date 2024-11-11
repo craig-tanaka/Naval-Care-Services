@@ -1,0 +1,139 @@
+/* ------------All-Elements------------------- */
+:root{
+        --primary-color-white: white;
+        --primary-color-light: #E2F1E7;
+        --primary-color-mid: #629584;
+        --primary-color-deep: #387478;
+        --primary-color-dark: #243642;
+
+}
+body{
+        margin: 0;
+        background-size: 5rem;
+        background-repeat: repeat;
+}
+body.light{
+        background-image: url(./img/site-background-light.webp);
+        background-color: var(--primary-color-light);
+        background-blend-mode: multiply;
+        color: var(--primary-color-dark);
+}
+body.dark{
+        background-image: url(./img/site-background-dark.webp);
+        color: var(--primary-color-light);
+}
+h1,h2,h3,h4,h5,h6{
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 5px;
+        margin-top: 4rem;
+        width: 80vw;
+        
+}
+p{
+        line-height: 1.6rem;
+        text-align: justify;
+        width: 80vw;
+        margin: 0 auto;
+}
+/* ------------All-Elements------------------- */
+
+
+/* -------------Font classes------------------ */
+.nunito-sans-thin {
+        font-family: "Nunito Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 200;
+        font-style: normal;
+        font-variation-settings:
+                "wdth"100,
+                "YTLC"500;
+}
+.nunito-sans-mid {
+        font-family: "Nunito Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-variation-settings:
+                "wdth"100,
+                "YTLC"500;
+}
+.nunito-sans-bold {
+        font-family: "Nunito Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 900;
+        font-style: normal;
+        font-variation-settings:
+                "wdth"100,
+                "YTLC"500;
+}
+/* -------------Font classes------------------ */
+
+
+
+/* -------------Navigaion------------------ */
+nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+}
+
+.nav-list{
+        list-style: none;
+        display: flex;
+}
+.nav-link{
+        cursor: pointer;
+}
+.nav-link:not(.nav-link:last-of-type){
+        margin-right: 1rem;
+}
+
+/* Color Mode Switcher */
+.color-mode-slider-cont{
+        width: 40px;
+        height: 20px;
+        border-radius: 10px;
+}
+.color-mode-slider-cont.light {
+        background: var(--primary-color-dark);
+}
+.color-mode-slider-cont.dark {
+        background: var(--primary-color-light);
+}
+
+.color-mode-slider-btn{
+        cursor: pointer;
+        display: block;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+}
+.color-mode-slider-cont.light .color-mode-slider-btn{
+        background-color: var(--primary-color-light);
+}
+.color-mode-slider-cont.dark .color-mode-slider-btn{
+        background-color: var(--primary-color-dark);
+}
+/* Color Mode Switcher */
+
+/* -------------Navigaion------------------ */
+
+
+/* -------------Home Styling------------------ */
+section{
+        padding: 0 2rem 2rem;
+}
+.hero {
+        background-image: url(./img/hero-image.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-color: #24364296;
+        background-blend-mode: multiply;
+        color: var(--primary-color-light);
+        /* text-shadow: 1px 1px #000000d9; */
+}
+.hero p{
+        margin-bottom: 3rem;
+}
+/* -------------Home Styling------------------ */
